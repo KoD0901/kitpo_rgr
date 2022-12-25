@@ -23,7 +23,6 @@ public class TList implements Serializable
 	private Node       tail;
 	private int        size;
 	private UserType builder;
-	//private Comparator comparator;
 
 	public TList(){
 		init();
@@ -32,7 +31,6 @@ public class TList implements Serializable
 	public TList(UserType builder)
 	{
 		this.builder    = builder;
-		//this.comparator = builder.getTypeComparator();
 		this.head       = null;
 		this.tail       = null;
 		this.size       = 0;
@@ -48,7 +46,6 @@ public class TList implements Serializable
 	public void init()
 	{
 		this.builder    = null;
-		//this.comparator = null;
 		this.head       = null;
 		this.tail       = null;
 		this.size       = 0;
@@ -297,8 +294,6 @@ public class TList implements Serializable
 		return res;
 	}
 
-	//GET
-	//SET
 	public int getSize()
 	{
 		return this.size;
