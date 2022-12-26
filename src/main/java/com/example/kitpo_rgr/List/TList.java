@@ -2,12 +2,11 @@ package com.example.kitpo_rgr.List;
 
 import com.example.kitpo_rgr.Builder.UserType;
 import com.example.kitpo_rgr.Comparator.Comparator;
-import java.io.Serializable;
 import java.util.ArrayList;
 
-public class TList implements Serializable
+public class TList
 {
-	private class Node implements Serializable
+	private class Node
 	{
 		public Node   next;
 		public Object data;
@@ -67,7 +66,7 @@ public class TList implements Serializable
 	}
 
 	public boolean pushFront(Object obj)
-	{// vstavka v front
+	{
 
 		Node nNode = new Node(obj);
 
@@ -150,7 +149,6 @@ public class TList implements Serializable
 		{
 			if (head != tail)
 			{
-				//Поиск ноды и её предщественника
                 if (index > 0)
                 {
                     toDelPrev = findNode(index - 1);
