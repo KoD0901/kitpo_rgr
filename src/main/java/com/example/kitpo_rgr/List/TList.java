@@ -4,7 +4,7 @@ import com.example.kitpo_rgr.Builder.UserType;
 import com.example.kitpo_rgr.Comparator.Comparator;
 import java.util.ArrayList;
 
-public class TList
+public class TList implements TListInterface
 {
 	private class Node
 	{
